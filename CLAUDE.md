@@ -72,6 +72,17 @@ Chaque page indique **à quelle date** elle reflète le projet (« État au … 
 | `projets/<projet>/`         | Une étude de cas par projet : présentation, conception, choix techniques, exemples |
 | `methode/`                  | Méthode transverse : IA, qualité, sécurité et RGPD                                 |
 
+## Skills du dépôt
+
+Procédures détaillées, chargées à la demande : `.claude/skills/<nom>/SKILL.md`.
+
+| Skill         | Quand                                                                      |
+| ------------- | -------------------------------------------------------------------------- |
+| `book-public` | Reporter une étape d'un projet privé dans le book (écrire, relire, livrer) |
+
+Comme dans les projets privés, Claude **propose** une nouvelle skill quand une procédure revient,
+et ne la crée qu'après l'accord de Romain.
+
 ## Méthode
 
 - Même méthode que les projets privés : **un ticket** (issue de ce dépôt) avant chaque travail,
@@ -80,5 +91,5 @@ Chaque page indique **à quelle date** elle reflète le projet (« État au … 
 - Les tickets de ce dépôt sont **publics** : pas de détail confidentiel dedans non plus.
 - Langue des commits, tickets et PR : français.
 - Quand un projet privé franchit une étape (nouvelle décision importante, démo, mise en ligne),
-  ouvrir un ticket ici pour la reporter.
+  sa fin de session ouvre un ticket ici ; le report suit la skill `book-public`.
 - Fin de session : note de passage dans le ticket en cours (fait, reste, questions).
