@@ -21,6 +21,10 @@ conception, les choix techniques, des exemples de code et la méthode, à partir
 - Contenu en **français**. Accueil (`README.en.md`) et résumé de chaque page aussi en **anglais**.
 - **Markdown lisible directement sur GitHub** : titres courts, paragraphes brefs, tableaux, schémas
   Mermaid (GitHub les affiche). Un petit site GitHub Pages viendra plus tard (ticket).
+- **Le fait et le prévu** (choix de Romain, 2026-10-31) : le présent est réservé à ce qui existe
+  dans le code ou en ligne. Ce qui est décidé mais pas construit se dit au futur ou « à venir »,
+  et toute page qui en parle se termine par une section **« En étude, bientôt »**, mise à jour à
+  la livraison.
 - Ton : précis, sobre, à la première personne pour Romain (« je »). Pas de superlatifs ni de
   chiffres invérifiables ; on montre plutôt qu'on affirme.
 

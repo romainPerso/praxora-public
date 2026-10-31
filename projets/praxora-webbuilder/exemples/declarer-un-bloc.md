@@ -114,10 +114,16 @@ export function definirBloc(parametres) {
 | À partir de la déclaration   | On obtient                                                               |
 | ---------------------------- | ------------------------------------------------------------------------ |
 | les champs et leurs limites  | la validation de chaque configuration enregistrée (Zod)                  |
-| la nature de chaque champ    | ce que le client a le droit de modifier                                  |
+| la nature de chaque champ    | ce que le client pourra modifier, et ce qui m'est réservé                |
 | les variantes                | les composants d'affichage, un par variante                              |
 | les contenus d'exemple       | l'aperçu, et des modèles sans données de client                          |
 | la version et les migrations | la mise à jour des sites existants ([exemple](faire-evoluer-un-bloc.md)) |
 
-Ajouter un bloc au catalogue, c'est écrire cette déclaration et un composant par variante :
-l'administration, la validation et les droits suivent sans autre code.
+Ajouter un bloc au catalogue, c'est écrire cette déclaration et un composant par variante : la
+validation, l'affichage et les modèles suivent sans autre code.
+
+## En étude, bientôt
+
+L'**administration** du client (décembre 2026) lira la même déclaration : un formulaire par bloc,
+limité aux champs de contenu, avec les mêmes limites que la validation. Ajouter un bloc ne
+demandera toujours qu'une déclaration et ses composants.

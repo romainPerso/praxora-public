@@ -100,3 +100,11 @@ premiers clients.
 
 Ce dépôt public a sa propre vérification à chaque PR : mise en forme, et **recherche de secrets**
 dans tout l'historique (gitleaks), parce qu'un dépôt public ne pardonne pas.
+
+## En étude, bientôt
+
+- **Tests de l'administration et de l'export** : chaque nouvelle brique arrivera avec ses tests
+  dans la même CI (parcours d'administration en bout en bout, export rechargé dans une base vide).
+- **Déploiement** : la question d'une mise en production automatique se reposera avec les premiers
+  clients.
+- **praxora-compta** : la même CI quand le code commencera, après l'étude.

@@ -50,7 +50,8 @@ direction**, et à ce que tout reste compréhensible sans elle.
   avant toute facturation.
 - **Images générées** : modèles à licence ouverte seulement, sur ma propre machine, toujours
   signalées ; et **jamais** pour un vrai client, dont les réalisations sont ses photos.
-- Les **aides IA** proposées aux clients de praxora restent facultatives, mesurées et plafonnées.
+- Les **aides IA** qui seront proposées aux clients de praxora resteront facultatives, mesurées et
+  plafonnées (prévues pour la version 1).
 
 ## Les erreurs deviennent des règles
 
@@ -74,3 +75,9 @@ Voir aussi : [intégration continue et tests](integration-continue.md),
   sur ce qui est irréversible.
 - Tout ce qui est écrit pour l'IA (contexte, décisions, procédures) **sert aussi aux humains** :
   un nouveau développeur trouverait le même chemin.
+
+## En étude, bientôt
+
+- **Les aides IA pour les clients** de praxora (version 1, janvier 2027) : rédaction et
+  traduction dans l'administration, débranchables, mesurées et plafonnées par client. Ce sera
+  l'IA **dans** le produit, à distinguer de l'IA qui m'aide à le construire, décrite ici.

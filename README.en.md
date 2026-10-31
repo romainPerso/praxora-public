@@ -15,8 +15,9 @@ English summary.
 - **What I do**: complete web applications, from interface design to production — TypeScript,
   React / Next.js, Node.js, PostgreSQL, Docker.
 - **What I am building now**: [praxoraXwebbuilder](projets/praxora-webbuilder/), a platform that
-  builds and manages showcase websites for freelancers and small businesses, with a full export
-  so that each client stays the owner of their site.
+  builds and manages showcase websites for freelancers and small businesses. The demos are live;
+  the client admin and the full site export (so that each client stays the owner of their site)
+  are in progress.
 - **How I work**: written, reasoned decisions, a ticket for everything, automated tests, and an
   AI (Claude) used as an architect colleague within explicit rules — see
   [Working with AI](methode/travailler-avec-l-ia.md) (in French).
@@ -38,6 +39,17 @@ English summary.
 | [Working with AI](methode/travailler-avec-l-ia.md)                    | method, rules, limits                                              |
 | [Continuous integration and tests](methode/integration-continue.md)   | automated checks, tests, dependencies, deployment                  |
 | [Project management on GitHub](methode/gestion-de-projet-github.md)   | tickets, milestones, priorities, pull requests                     |
+
+## Coming next
+
+Every page describes **in the present tense only what exists**, and ends with what is being
+studied or coming soon (« En étude, bientôt »). Pages are updated once it is delivered.
+
+- **praxoraXwebbuilder**: authentication and the client admin (first client targeted for
+  December 2026), then the standalone export and AI helpers (version 1, January 2027); new demos
+  (shops, an artist).
+- **praxora-compta**: the study ends in late November 2026 with a go / no-go decision.
+- **This book**: a small website (GitHub Pages) for easier reading.
 
 ## Contact
 

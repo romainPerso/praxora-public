@@ -46,9 +46,14 @@ tombe dans la liste « Jamais » de `CLAUDE.md`.
      tourner dans le projet d'origine avant de le publier ; sinon dire qu'il est simplifié ;
    - jamais de code de sécurité tel quel (authentification, cloisonnement, contrôles d'accès) :
      on en décrit le principe.
-6. **Dates** : mettre à jour « État au … » de chaque page touchée, et les chiffres (nombre de
+6. **Le fait et le prévu** : vérifier dans le code (branche `main` du dépôt privé) que ce qui est
+   écrit au présent existe. Ce qui est seulement décidé va au futur et dans la section
+   **« En étude, bientôt »** en fin de page (« Coming next » en anglais), avec la date visée.
+   Quand une étape est livrée, la retirer de cette section et la décrire au présent, sur **toutes**
+   les pages qui l'annonçaient (`grep` sur le sujet).
+7. **Dates** : mettre à jour « État au … » de chaque page touchée, et les chiffres (nombre de
    décisions, de tests, de démos) seulement s'ils ont été recomptés.
-7. **Liens** : vérifier que les démos et pages citées répondent.
+8. **Liens** : vérifier que les démos et pages citées répondent.
 
 ## 4. Relire avant la PR
 

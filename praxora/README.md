@@ -17,9 +17,9 @@ petits commerces, associations.
 
 | Principe                        | Ce que ça veut dire concrètement                                                                                                         |
 | ------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- |
-| **Réversibilité**               | Le client peut partir avec un export complet (application, données, médias, guide) et le faire tourner ailleurs.                         |
+| **Réversibilité**               | Le client pourra partir avec un export complet (application, données, médias, guide) et le faire tourner ailleurs.                       |
 | **Pas de service propriétaire** | Briques open source, auto-hébergeables ; hébergement en Europe (OVH).                                                                    |
-| **IA optionnelle**              | Les aides IA sont un plus, débranchables ; tout reste faisable à la main.                                                                |
+| **IA optionnelle**              | Les aides IA seront un plus, débranchables ; tout reste faisable à la main.                                                              |
 | **Cloisonnement**               | Chaque donnée est rattachée à son client, et la séparation est garantie par la base de données elle-même, pas seulement par l'interface. |
 | **L'utilisateur d'abord**       | À valeur technique égale, l'expérience de l'utilisateur final tranche.                                                                   |
 
@@ -43,6 +43,18 @@ flowchart LR
   W --> P[www.praxora.fr<br/>et démos]
   S --> O[(VPS OVH<br/>Europe)]
 ```
+
+## En étude, bientôt
+
+- **Réversibilité** : le code sait déjà tourner en mode autonome (un seul site, médias sur disque) ;
+  le paquet d'export qui le livre au client arrive avec la version 1 du webbuilder (janvier 2027).
+- **IA optionnelle** : les aides IA pour les clients (rédaction, traduction), mesurées et
+  plafonnées, arrivent aussi avec la version 1.
+- **praxora-compta** : décision de fin d'étude visée fin novembre 2026.
+- **Code commun** : rien d'extrait pour l'instant ; ce sera fait quand un deuxième projet en aura
+  besoin.
+
+Le cloisonnement, lui, est en place et testé.
 
 ## Services
 
