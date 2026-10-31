@@ -1,0 +1,27 @@
+# Vérifications du book public : mise en forme et recherche de secrets à chaque PR.
+name: Vérifications
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  verifications:
+    name: Mise en forme et secrets
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+      - name: Mise en forme (Prettier)
+        run: npx --yes prettier@3 --check .
+      # Dépôt public : aucun secret ne doit passer, même dans l'historique.
+      - name: Recherche de secrets (gitleaks)
+        run: docker run --rm -v "$PWD:/depot" ghcr.io/gitleaks/gitleaks:v8.28.0 git /depot --redact --verbose
