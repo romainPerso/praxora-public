@@ -63,6 +63,9 @@ L'IA se trompe, comme un collègue. Ce qui compte, c'est qu'une erreur ne se rep
   Je l'ai vu en relisant le site ; Claude a corrigé, puis vérifié les autres démos dans la
   foulée et trouvé le même oubli sur deux d'entre elles.
 
+Voir aussi : [intégration continue et tests](integration-continue.md),
+[gestion de projet sur GitHub](gestion-de-projet-github.md).
+
 ## Ce que j'en retire
 
 - L'IA ne remplace pas la conception : elle **rend visible** le manque de conception. Un projet
