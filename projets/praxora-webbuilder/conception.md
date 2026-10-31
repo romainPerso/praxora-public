@@ -6,14 +6,15 @@
 > versioned blocks migrated at startup; drafts and immutable published versions; tenant isolation
 > enforced by PostgreSQL row-level security; images processed once at upload.
 
-_État au 31 octobre 2026. Chaque idée renvoie à une décision écrite du projet (D-xxx)._
+_État au 31 octobre 2026. Chaque idée renvoie à une décision écrite du projet (D-xxx). Ce qui
+n'est pas encore construit est signalé « à venir » et repris en fin de page._
 
 ## 1. Un seul code, deux modes
 
 Le même code tourne en **mode plateforme** (tous les sites, tous les clients) et en **mode
 autonome** : un seul site, sans module IA, livré au client qui part. L'export n'est donc pas une
 version à part qu'on oublierait de maintenir : chaque fonctionnalité dit si elle existe en
-autonome. _(D-001, D-004)_
+autonome. Le mode autonome tourne déjà ; le paquet d'export est **à venir**. _(D-001, D-004)_
 
 ```mermaid
 flowchart TB
@@ -57,8 +58,9 @@ marqué **réglage** (pour moi) ou **contenu** (pour le client), ses variantes, 
 d'exemple, son numéro de version et ses migrations. De cette déclaration se déduisent :
 
 - la **validation** des configurations enregistrées ;
-- les **formulaires** de l'administration ;
-- les **droits** du client, champ par champ ;
+- les **formulaires** de l'administration (**à venir**, avec l'administration) ;
+- les **droits** du client, champ par champ (la séparation réglage / contenu est en place, son
+  application dans l'administration est **à venir**) ;
 - l'**enregistrement comme modèle** (les contenus du client sont remplacés par les exemples :
   rien ne fuit d'un client vers un modèle).
 
@@ -85,7 +87,8 @@ par défaut ne demande pas de nouvelle version. _(D-036)_
 Un brouillon par site ; **publier** recopie le brouillon en une version numérotée, **jamais
 modifiée ensuite** ; un retour arrière recopie une ancienne version en une nouvelle. L'historique
 reste complet et linéaire ; les modifications simultanées sont détectées par un numéro de
-révision. _(D-032)_
+révision. Le modèle de données et l'affichage de la version publiée sont en place ; les boutons
+« publier » et « revenir » arriveront avec l'administration. _(D-032)_
 
 ## 8. Le cloisonnement garanti par la base
 
@@ -113,6 +116,13 @@ en arrière-plan dans l'application elle-même, sans service supplémentaire. _(
   du restaurant. Le client n'en écrit jamais. _(D-048)_
 - **HTTPS automatique**, y compris quand un client branche son propre domaine : le certificat est
   délivré au premier passage, après vérification que le domaine est bien connu de la plateforme.
-  _(D-043)_
+  En place pour les démos ; le premier domaine de client viendra avec le premier client. _(D-043)_
 - **Cartes sans traceur** : carte statique par défaut, carte interactive (fond OpenStreetMap)
   chargée seulement si le visiteur le demande. _(D-052, D-061)_
+
+## En étude, bientôt
+
+- **Administration du client** : formulaires et droits déduits du catalogue, publication et retour
+  arrière (premier client, décembre 2026).
+- **Paquet d'export** du mode autonome (version 1, janvier 2027).
+- **Aides IA** débranchables, coupées en mode autonome (version 1).

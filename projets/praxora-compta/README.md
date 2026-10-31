@@ -37,3 +37,9 @@ outil existant. Recommander un outil qui existe déjà quand il convient fait pa
 - **Facture électronique** : se brancher sur une plateforme agréée plutôt que d'en devenir une.
 - **Les données appartiennent à l'abonné**, avec un export ouvert.
 - **L'étude avant le code**, et une mise en service encadrée.
+
+## En étude, bientôt
+
+- **Fin de l'étude** visée fin novembre 2026, avec la décision de développer ou non.
+- **Ensuite**, selon la décision : le calendrier de l'outil, ou l'accompagnement du prospect sur un
+  outil existant. Aucune mise en service avant la création officielle de praxora.

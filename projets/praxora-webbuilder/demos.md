@@ -35,3 +35,10 @@ générative ; en dernier recours, image créée par l'IA. Les comparaisons avan
 utilisent des « avant » générés **sur la géométrie de la vraie photo** (modèles à licence ouverte,
 sur ma propre machine), signalés comme tels sur les sites. Jamais d'image générée pour un vrai
 client : ses réalisations sont ses photos.
+
+## En étude, bientôt
+
+- **Commerces** : un chocolatier, une boutique de loisirs créatifs, une boutique de seconde main.
+- **Artiste** : une démo pour un artiste.
+
+Objectif : novembre 2026. Chaque nouvelle démo s'ajoutera au tableau ci-dessus.

@@ -2,10 +2,10 @@
 
 > **In English** — A multi-site platform that builds and manages showcase websites for
 > freelancers and small businesses (yoga teachers, restaurants, tradespeople, shops). Sites are
-> assembled from a catalogue of typed blocks; clients edit only their content in a restricted
-> admin; any site can be exported as a standalone application with its data. One Next.js codebase,
-> PostgreSQL with row-level security, self-hosted on a European VPS. Built by one person, with an
-> AI used as an architect colleague under explicit rules.
+> assembled from a catalogue of typed blocks. Coming next: a restricted admin where clients edit
+> only their content, and the export of any site as a standalone application with its data. One
+> Next.js codebase, PostgreSQL with row-level security, self-hosted on a European VPS. Built by one
+> person, with an AI used as an architect colleague under explicit rules.
 
 ## Le problème
 
@@ -19,6 +19,8 @@ qu'il ne sait plus modifier ni récupérer.
 Une plateforme où **je compose** le site à partir de blocs éprouvés, et où **le client ne touche
 qu'à ses contenus** : textes, photos, horaires, planning, carte du restaurant, actualités.
 
+Ce que la plateforme apportera à la version 1 (l'état actuel est détaillé plus bas) :
+
 | Pour le client                                                   | Pour moi                                                |
 | ---------------------------------------------------------------- | ------------------------------------------------------- |
 | Un site professionnel, mobile d'abord, en français et en anglais | Un site neuf à partir de modèles, sans repartir de zéro |
@@ -28,8 +30,8 @@ qu'à ses contenus** : textes, photos, horaires, planning, carte du restaurant, 
 
 ## En chiffres (31 octobre 2026)
 
-- **Une seule application** Next.js pour les sites publics, les administrations et le mode
-  autonome (l'export).
+- **Une seule application** Next.js : aujourd'hui les sites publics, sur la plateforme ou en mode
+  autonome ; demain les administrations.
 - **Une trentaine de types de blocs** (héros, planning de cours, carte du restaurant, horaires,
   réalisations avec avant / après, demande de devis, carte géographique…) et des **fiches**
   partagées (personnes, lieux, réalisations).
@@ -53,3 +55,17 @@ qu'à ses contenus** : textes, photos, horaires, planning, carte du restaurant, 
 | Premières démos en ligne                            | octobre 2026 (fait) |
 | Premier client en ligne                             | décembre 2026       |
 | Version 1 (administration client, export, aides IA) | janvier 2027        |
+
+## En étude, bientôt
+
+| Quoi                                                                  | Quand (visé)              |
+| --------------------------------------------------------------------- | ------------------------- |
+| Authentification, administration du client (contenus, photos, fiches) | premier client, déc. 2026 |
+| Publication et retour arrière depuis l'administration                 | premier client, déc. 2026 |
+| Paquet d'export (application, données, médias, guide)                 | version 1, janv. 2027     |
+| Aides IA (rédaction, traduction), mesurées et plafonnées par client   | version 1, janv. 2027     |
+| Nouvelles démos : commerces et artiste                                | novembre 2026             |
+
+Aujourd'hui en place : le catalogue de blocs et de fiches, les thèmes, les deux langues, le
+cloisonnement par la base, les médias, les formulaires (contact, réservation, demande de devis)
+et les sites publics (démos et www.praxora.fr).

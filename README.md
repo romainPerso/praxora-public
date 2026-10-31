@@ -14,8 +14,9 @@ exposer de sensible.
 - **Ce que je fais** : des applications web complètes, de la conception de l'interface à la mise
   en production — TypeScript, React / Next.js, Node.js, PostgreSQL, Docker.
 - **Ce que je construis en ce moment** : [praxoraXwebbuilder](projets/praxora-webbuilder/), une
-  plateforme qui fabrique et administre des sites vitrines pour des indépendants et des petits
-  commerces, avec un export complet du site pour que le client reste propriétaire.
+  plateforme pour fabriquer et administrer des sites vitrines d'indépendants et de petits
+  commerces. Les démos sont en ligne ; l'administration des clients et l'export complet du site
+  (pour que le client reste propriétaire) sont en cours.
 - **Comment je travaille** : décisions écrites et justifiées, tickets pour tout, tests
   automatiques, et une IA (Claude) utilisée comme un collègue architecte, encadrée par des règles
   explicites — voir [Travailler avec l'IA](methode/travailler-avec-l-ia.md).
@@ -37,6 +38,17 @@ exposer de sensible.
 | [Travailler avec l'IA](methode/travailler-avec-l-ia.md)              | technique, managers | méthode, règles, limites                                               |
 | [Intégration continue et tests](methode/integration-continue.md)     | technique           | vérifications automatiques, tests, dépendances, mise en production     |
 | [Gestion de projet sur GitHub](methode/gestion-de-projet-github.md)  | managers, technique | tickets, jalons, priorités, pull requests                              |
+
+## En étude, bientôt
+
+Chaque page du book décrit **au présent ce qui existe**, et se termine par ce qui est en étude
+ou arrive bientôt. Elle est mise à jour quand c'est livré.
+
+- **praxoraXwebbuilder** : l'authentification et l'administration des clients (premier client
+  visé en décembre 2026), puis l'export autonome et les aides IA (version 1, janvier 2027) ; de
+  nouvelles démos (commerces, artiste).
+- **praxora-compta** : l'étude se conclut fin novembre 2026 par la décision de développer ou non.
+- **Ce book** : un petit site (GitHub Pages) pour le lire plus confortablement.
 
 ## Contact
 
