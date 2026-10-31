@@ -35,6 +35,8 @@ exposer de sensible.
 | ↳ [Démos](projets/praxora-webbuilder/demos.md)                       | tout le monde       | les sites en ligne                                                     |
 | [praxora-compta](projets/praxora-compta/)                            | curieux             | comptabilité et facture électronique des auto-entrepreneurs (en étude) |
 | [Travailler avec l'IA](methode/travailler-avec-l-ia.md)              | technique, managers | méthode, règles, limites                                               |
+| [Intégration continue et tests](methode/integration-continue.md)     | technique           | vérifications automatiques, tests, dépendances, mise en production     |
+| [Gestion de projet sur GitHub](methode/gestion-de-projet-github.md)  | managers, technique | tickets, jalons, priorités, pull requests                              |
 
 ## Contact
 

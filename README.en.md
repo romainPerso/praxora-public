@@ -36,6 +36,8 @@ English summary.
 | ↳ [Demos](projets/praxora-webbuilder/demos.md)                        | the live websites                                                  |
 | [praxora-compta](projets/praxora-compta/)                             | bookkeeping and e-invoicing for French micro-entrepreneurs (study) |
 | [Working with AI](methode/travailler-avec-l-ia.md)                    | method, rules, limits                                              |
+| [Continuous integration and tests](methode/integration-continue.md)   | automated checks, tests, dependencies, deployment                  |
+| [Project management on GitHub](methode/gestion-de-projet-github.md)   | tickets, milestones, priorities, pull requests                     |
 
 ## Contact
 
