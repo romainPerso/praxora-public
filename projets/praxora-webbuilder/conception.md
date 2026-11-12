@@ -6,7 +6,7 @@
 > versioned blocks migrated at startup; drafts and immutable published versions; tenant isolation
 > enforced by PostgreSQL row-level security; images processed once at upload.
 
-_État au 31 octobre 2026. Chaque idée renvoie à une décision écrite du projet (D-xxx). Ce qui
+_État au 12 novembre 2026. Chaque idée renvoie à une décision écrite du projet (D-xxx). Ce qui
 n'est pas encore construit est signalé « à venir » et repris en fin de page._
 
 ## 1. Un seul code, deux modes
@@ -119,6 +119,31 @@ en arrière-plan dans l'application elle-même, sans service supplémentaire. _(
   En place pour les démos ; le premier domaine de client viendra avec le premier client. _(D-043)_
 - **Cartes sans traceur** : carte statique par défaut, carte interactive (fond OpenStreetMap)
   chargée seulement si le visiteur le demande. _(D-052, D-061)_
+
+## 11. Des textures qui gardent les couleurs du site
+
+Un fond uni peut paraître plat. Je voulais donner de la matière à certains sites (coups de
+pinceau, pierre, papier) sans changer leur structure, et sans que la texture se remarque plus que
+le contenu. _(D-085)_
+
+- **Une texture pour tous les thèmes.** Chaque texture est faite de pixels blancs ou noirs plus ou
+  moins opaques, en « lumière et ombre » : elle éclaircit ou assombrit la couleur de fond au lieu
+  de la remplacer. La même texture sert donc à tous les thèmes, et chaque site garde ses
+  couleurs.
+- **Du CSS seul.** Le fond d'une section superpose trois couches : la couleur, la texture
+  répétée, et un voile de la couleur de fond qui règle l'intensité. J'ai écarté `opacity`, qui
+  aurait rendu le texte transparent avec le fond.
+- **Des garde-fous.** Les textures viennent d'un catalogue fermé (pas d'envoi libre), leur
+  intensité est plafonnée pour que le texte reste lisible, chaque fichier pèse moins de 200 Ko
+  (un test le vérifie) et l'export autonome les emporte.
+- **La fabrication.** Mon premier essai, une texture calculée à la main, ressemblait à de la
+  fourrure plus qu'à de la peinture. La texture en ligne a été générée par une IA à licence
+  ouverte sur ma machine, puis recadrée et rendue raccordable bord à bord par un petit script :
+  137 Ko au lieu de 600. Chaque réglage (intensité, sections concernées) a été validé sur des
+  aperçus avant d'écrire le code.
+
+Premier usage : les sections sombres de la [démo artiste](https://artiste.praxora.fr). Les
+sections claires restent unies, comme le mur d'une galerie.
 
 ## En étude, bientôt
 

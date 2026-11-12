@@ -21,7 +21,7 @@ English summary.
 - **How I work**: written, reasoned decisions, a ticket for everything, automated tests, and an
   AI (Claude) used as an architect colleague within explicit rules — see
   [Working with AI](methode/travailler-avec-l-ia.md) (in French).
-- **Online**: [nine demo websites](projets/praxora-webbuilder/demos.md) built with the platform,
+- **Online**: [thirteen demo websites](projets/praxora-webbuilder/demos.md) built with the platform,
   and [www.praxora.fr](https://www.praxora.fr).
 
 ## Contents
@@ -35,6 +35,7 @@ English summary.
 | ↳ [Technical choices](projets/praxora-webbuilder/choix-techniques.md) | the stack, what was ruled out and why                              |
 | ↳ [Code samples](projets/praxora-webbuilder/exemples/)                | commented excerpts                                                 |
 | ↳ [Demos](projets/praxora-webbuilder/demos.md)                        | the live websites                                                  |
+| ↳ [Shops](projets/praxora-webbuilder/commerces.md)                    | selling without online payment: pickup orders, filterable shop     |
 | [praxora-compta](projets/praxora-compta/)                             | bookkeeping and e-invoicing for French micro-entrepreneurs (study) |
 | [Working with AI](methode/travailler-avec-l-ia.md)                    | method, rules, limits                                              |
 | [Continuous integration and tests](methode/integration-continue.md)   | automated checks, tests, dependencies, deployment                  |
@@ -46,8 +47,7 @@ Every page describes **in the present tense only what exists**, and ends with wh
 studied or coming soon (« En étude, bientôt »). Pages are updated once it is delivered.
 
 - **praxoraXwebbuilder**: authentication and the client admin (first client targeted for
-  December 2026), then the standalone export and AI helpers (version 1, January 2027); new demos
-  (shops, an artist).
+  December 2026), then the standalone export and AI helpers (version 1, January 2027).
 - **praxora-compta**: the study ends in late November 2026 with a go / no-go decision.
 - **This book**: a small website (GitHub Pages) for easier reading.
 
@@ -58,5 +58,5 @@ Through GitHub ([romainPerso](https://github.com/romainPerso)) or the
 
 ---
 
-_As of 31 October 2026. Texts and excerpts © Romain Moussac, all rights reserved: free to read,
+_As of 12 November 2026. Texts and excerpts © Romain Moussac, all rights reserved: free to read,
 reuse on request._
