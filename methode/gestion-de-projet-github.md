@@ -6,7 +6,7 @@
 > views; one pull request per coherent batch, merged by me; and lessons learned along the way
 > ("Closes" only works in English, stacked pull requests need care).
 
-_État au 31 octobre 2026._
+_État au 12 novembre 2026._
 
 ## Pourquoi GitHub seul
 
@@ -60,8 +60,8 @@ Le ticket se ferme à la fusion de sa PR, et le tableau suit.
   quelques minutes.
 - Branches nommées d'après le ticket (`186-cartes`, `158-theme-cuivre`).
 - Une PR qui termine un ticket écrit **« Closes #N »** : le ticket se ferme à la fusion.
-- La CI doit être verte ; **je relis et je fusionne** moi-même
-  ([la vérification](integration-continue.md)).
+- La CI doit être verte : la branche `main` est protégée, GitHub refuse la fusion sinon. **Je relis
+  et je fusionne** moi-même ([la vérification](integration-continue.md)).
 - La description dit **quoi relire en priorité** et donne les **commandes de mise en production**
   prêtes à copier.
 

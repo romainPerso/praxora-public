@@ -3,11 +3,14 @@
 > **In English** — How every change to praxoraXwebbuilder is checked before it reaches
 > production: formatting, lint and type checks, unit tests, integration tests against a real
 > PostgreSQL (including tenant-isolation tests), a production build, end-to-end browser tests on
-> demo sites, and both Docker images — all on every pull request, with documentation-only changes
-> skipping the heavy jobs. Dependencies are updated weekly by Dependabot, major versions only
-> through dedicated tickets. Deployment is deliberately a single manual step after merge.
+> demo sites, and the Docker images when what builds them changes — on every pull request, with
+> documentation-only changes skipping the heavy jobs. The main branch is protected: GitHub refuses
+> any merge until the checks pass. After the free CI minutes ran out in November 2026, I measured
+> each job and cut usage by about 60 % without removing a check from code pull requests.
+> Dependencies are updated weekly by Dependabot, major versions only through dedicated tickets.
+> Deployment is deliberately a single manual step after merge.
 
-_État au 31 octobre 2026. Exemple : praxoraXwebbuilder ; les autres projets suivent le même
+_État au 12 novembre 2026. Exemple : praxoraXwebbuilder ; les autres projets suivent le même
 modèle._
 
 ## La règle
@@ -16,27 +19,30 @@ modèle._
 automatique (GitHub Actions) ; la décision de fusionner est humaine : c'est moi qui fusionne, après
 relecture.
 
-## Les quatre étapes de la CI
+Depuis novembre 2026, la règle n'est plus seulement une discipline : la branche `main` est
+protégée, et GitHub refuse la fusion tant que les vérifications ne sont pas vertes. La règle vaut
+pour moi aussi, sans exception.
+
+## Les étapes de la CI
 
 ```mermaid
 flowchart LR
-  PR([Pull request]) --> P[Périmètre<br/>des changements]
-  PR --> Q[Qualité<br/>forme, lint, types,<br/>tests unitaires]
-  P --> B{Du code<br/>a changé ?}
-  Q --> B
+  PR([Pull request]) --> Q[Qualité et périmètre<br/>forme, lint, types,<br/>tests unitaires]
+  Q --> B{Du code<br/>a changé ?}
+  Q --> D{Ce qui construit<br/>l'image a changé ?}
   B -- oui --> E[Intégration, construction<br/>et bout en bout]
-  B -- oui --> I[Images Docker<br/>app et migrations]
-  B -- non, que de la doc --> F([Fusion possible])
+  D -- oui --> I[Images Docker<br/>app et migrations]
+  B -- non --> F([Fusion possible])
+  D -- non --> F
   E --> F
   I --> F
 ```
 
 | Étape                           | Ce qu'elle vérifie                                                                                                                                                    |
 | ------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **Périmètre des changements**   | si la PR ne touche que de la documentation, les étapes lourdes sont sautées (une étape sautée ne bloque pas la fusion)                                                |
-| **Qualité**                     | mise en forme (Prettier), lint (ESLint), types (TypeScript strict), tests unitaires (Vitest)                                                                          |
+| **Qualité et périmètre**        | mise en forme (Prettier), lint (ESLint), types (TypeScript strict), tests unitaires (Vitest) ; et ce que touche la PR, qui décide des étapes suivantes                |
 | **Intégration et bout en bout** | une vraie base PostgreSQL et un stockage S3 lancés dans la CI ; migrations ; tests d'intégration ; construction de production ; tests dans un navigateur (Playwright) |
-| **Images Docker**               | les deux images de production se construisent : l'application et celle qui applique les migrations                                                                    |
+| **Images Docker**               | les deux images de production se construisent (l'application, les migrations), quand la PR touche ce qui les fabrique : Dockerfile, dépendances, configurations       |
 
 Quelques choix qui comptent :
 
@@ -48,6 +54,32 @@ Quelques choix qui comptent :
   système inutiles : quelques minutes gagnées à chaque PR.
 - **Rapport Playwright** gardé une semaine quand un test de bout en bout échoue, pour voir ce que
   le navigateur a vu.
+
+## Une CI plus sobre
+
+Le 11 novembre 2026 au soir, les dernières tâches de la CI n'ont pas démarré : le quota gratuit de
+GitHub Actions (2 000 minutes par mois pour un dépôt privé) était épuisé, en onze jours. Aucune
+PR n'est passée sans vérification, mais le signal était clair.
+
+J'ai d'abord mesuré, tâche par tâche, avant de changer quoi que ce soit. Trois constats :
+
+- **Près de la moitié des minutes jouait tout en double.** Après chaque fusion, toute la suite
+  repartait sur `main`, pour un code déjà vérifié dans sa PR, documentation comprise.
+- **L'image Docker était reconstruite à chaque PR**, alors qu'elle ne casse que si ce qui la
+  fabrique change ; le code de l'application est déjà construit par l'étape de bout en bout.
+- **Une étape de dix secondes coûtait une minute** : GitHub arrondit chaque tâche à la minute
+  supérieure.
+
+Ce qui a changé : plus d'exécution sur `main` après une fusion (sauf quand les dépendances
+changent, pour garder à jour les caches partagés avec les PR), l'image Docker seulement quand
+c'est utile, le périmètre calculé dans l'étape de qualité, et un **filet de sécurité** : la suite
+complète tourne chaque lundi matin, et je peux la lancer à la main avant une mise en production
+sensible. Gain attendu : environ 60 % de minutes en moins, sans retirer une seule vérification à
+une PR de code.
+
+Le risque accepté est écrit avec la décision : deux PR vertes chacune de leur côté qui se
+contrediraient une fois fusionnées. L'exécution du lundi le verrait. Je comparerai la
+consommation de fin novembre à la mesure de départ pour vérifier le gain.
 
 ## Les tests
 

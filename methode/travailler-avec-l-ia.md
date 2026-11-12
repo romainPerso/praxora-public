@@ -5,9 +5,11 @@
 > framed by written context (a CLAUDE.md per repository), a ticket for every piece of work,
 > written decisions, a session journal, reusable procedures ("skills") and hard rules (no
 > secrets, no AI-generated images for real clients, legal texts reviewed by a lawyer). Mistakes
-> become rules.
+> become rules. Since November 2026, every text written for humans (websites, leaflets, client
+> documents) goes once through a "humanizer" skill that removes AI writing tics, without changing
+> any fact.
 
-_État au 31 octobre 2026._
+_État au 12 novembre 2026._
 
 ## Le principe
 
@@ -23,7 +25,7 @@ direction**, et à ce que tout reste compréhensible sans elle.
 | -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------- |
 | `CLAUDE.md` (un par dépôt) | le contexte lu au début de chaque session : principes non négociables, méthode, pile, où trouver quoi                                          |
 | **Tickets** GitHub         | un ticket avant chaque travail, commenté au début, à la livraison et à la mise en ligne ; tout ce qui est reporté reçoit un ticket « backlog » |
-| `docs/decisions.md`        | chaque choix structurant, avec ses raisons et ce qui a été écarté (près de 70 à ce jour)                                                       |
+| `docs/decisions.md`        | chaque choix structurant, avec ses raisons et ce qui a été écarté (plus de 100 à ce jour)                                                      |
 | `docs/glossaire.md`        | le vocabulaire : tout nouveau concept y entre avant le code                                                                                    |
 | `docs/journal.md`          | une entrée par session, écrite pour un humain : décisions, difficultés, progrès, suite                                                         |
 | **Note de passage**        | en fin de session, dans le ticket en cours : ce qui est fait, ce qui reste, les questions                                                      |
@@ -53,6 +55,31 @@ direction**, et à ce que tout reste compréhensible sans elle.
 - Les **aides IA** qui seront proposées aux clients de praxora resteront facultatives, mesurées et
   plafonnées (prévues pour la version 1).
 
+## Relire ce que lisent les humains
+
+Un texte écrit avec une IA se reconnaît : « crucial », les énumérations par trois, la phrase-chute
+qui conclut chaque paragraphe. Un lecteur qui repère ces tics doute du reste, même quand le fond
+est juste. Or mes sites, mes dépliants et les documents que je remets à mes clients sont lus par
+des humains qui ne me connaissent pas encore.
+
+Depuis le 11 novembre 2026, tout texte destiné à des humains passe donc **une fois** par une
+skill de relecture qui retire ces tics : `humaniseur-fr` pour le français, `humanizer` pour
+l'anglais, deux skills libres (licence MIT). Mon cadrage passe avant le leur : registre courant
+soigné, vouvoiement, guillemets « », et **aucun fait ajouté, retiré ou modifié**. Une seule
+passe : chaque passe supplémentaire aplatit le texte un peu plus.
+
+Trois retouches faites sur [www.praxora.fr](https://www.praxora.fr) :
+
+| Avant                                                                                         | Après                                                                                |
+| --------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------ |
+| Votre site s'exporte en entier, prêt à être installé ailleurs. Vous n'êtes jamais prisonnier. | Votre site s'exporte en entier : vous pouvez l'installer ailleurs quand vous voulez. |
+| Le programme part de votre niveau et de vos besoins, pas d'un catalogue tout fait.            | Le programme part de votre niveau et de vos besoins.                                 |
+| … une base technique irréprochable …                                                          | … une base technique solide …                                                        |
+
+La phrase-chute disparaît, l'opposition inutile aussi, et le superlatif devient un mot qu'on peut
+tenir. Le code, les tickets et la documentation interne ne passent pas par cette relecture : ils
+s'adressent à des développeurs, qui ont besoin de précision plus que de style.
+
 ## Les erreurs deviennent des règles
 
 L'IA se trompe, comme un collègue. Ce qui compte, c'est qu'une erreur ne se reproduise pas :
@@ -63,6 +90,10 @@ L'IA se trompe, comme un collègue. Ce qui compte, c'est qu'une erreur ne se rep
 - Le même jour, des labels annoncés dans une proposition avaient été oubliés à l'implémentation.
   Je l'ai vu en relisant le site ; Claude a corrigé, puis vérifié les autres démos dans la
   foulée et trouvé le même oubli sur deux d'entre elles.
+- Le 11 novembre 2026, la CI avait épuisé son quota mensuel de minutes en onze jours : personne ne
+  surveillait sa consommation. Le lendemain : mesure, CI allégée, et une branche `main` que GitHub
+  protège lui-même
+  ([détail](integration-continue.md#une-ci-plus-sobre)).
 
 Voir aussi : [intégration continue et tests](integration-continue.md),
 [gestion de projet sur GitHub](gestion-de-projet-github.md).
