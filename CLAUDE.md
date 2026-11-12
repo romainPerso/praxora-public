@@ -97,3 +97,9 @@ et ne la crée qu'après l'accord de Romain.
 - Quand un projet privé franchit une étape (nouvelle décision importante, démo, mise en ligne),
   sa fin de session ouvre un ticket ici ; le report suit la skill `book-public`.
 - Fin de session : note de passage dans le ticket en cours (fait, reste, questions).
+- **Relecture d'humanisation** (webbuilder D-104) : chaque page du book passe une fois par
+  `humaniseur-fr` (français) ou `humanizer` (anglais), skills globales de Romain, sans changer
+  aucun fait.
+- **Dossier inaccessible** (Romain, 2026-11-12, #25) : quand la session n'a pas accès à un dossier
+  dont elle a besoin (ces skills, fichiers du poste de Romain), Claude **lui demande l'accès** au
+  lieu de chercher un autre chemin (copie publique, recréation de mémoire).
