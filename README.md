@@ -20,7 +20,7 @@ exposer de sensible.
 - **Comment je travaille** : décisions écrites et justifiées, tickets pour tout, tests
   automatiques, et une IA (Claude) utilisée comme un collègue architecte, encadrée par des règles
   explicites — voir [Travailler avec l'IA](methode/travailler-avec-l-ia.md).
-- **À voir en ligne** : [neuf sites de démonstration](projets/praxora-webbuilder/demos.md) faits
+- **À voir en ligne** : [treize sites de démonstration](projets/praxora-webbuilder/demos.md) faits
   avec la plateforme, et [www.praxora.fr](https://www.praxora.fr).
 
 ## Sommaire
@@ -34,6 +34,7 @@ exposer de sensible.
 | ↳ [Choix techniques](projets/praxora-webbuilder/choix-techniques.md) | technique           | la pile, ce qui a été écarté et pourquoi                               |
 | ↳ [Exemples de code](projets/praxora-webbuilder/exemples/)           | technique           | extraits commentés                                                     |
 | ↳ [Démos](projets/praxora-webbuilder/demos.md)                       | tout le monde       | les sites en ligne                                                     |
+| ↳ [Commerces](projets/praxora-webbuilder/commerces.md)               | curieux, technique  | vendre sans paiement en ligne : commande à retirer, boutique filtrable |
 | [praxora-compta](projets/praxora-compta/)                            | curieux             | comptabilité et facture électronique des auto-entrepreneurs (en étude) |
 | [Travailler avec l'IA](methode/travailler-avec-l-ia.md)              | technique, managers | méthode, règles, limites                                               |
 | [Intégration continue et tests](methode/integration-continue.md)     | technique           | vérifications automatiques, tests, dépendances, mise en production     |
@@ -45,8 +46,7 @@ Chaque page du book décrit **au présent ce qui existe**, et se termine par ce 
 ou arrive bientôt. Elle est mise à jour quand c'est livré.
 
 - **praxoraXwebbuilder** : l'authentification et l'administration des clients (premier client
-  visé en décembre 2026), puis l'export autonome et les aides IA (version 1, janvier 2027) ; de
-  nouvelles démos (commerces, artiste).
+  visé en décembre 2026), puis l'export autonome et les aides IA (version 1, janvier 2027).
 - **praxora-compta** : l'étude se conclut fin novembre 2026 par la décision de développer ou non.
 - **Ce book** : un petit site (GitHub Pages) pour le lire plus confortablement.
 
@@ -57,5 +57,5 @@ Par GitHub ([romainPerso](https://github.com/romainPerso)) ou par le site
 
 ---
 
-_État au 31 octobre 2026. Textes et extraits © Romain Moussac, tous droits réservés : lecture
+_État au 12 novembre 2026. Textes et extraits © Romain Moussac, tous droits réservés : lecture
 libre, réutilisation sur demande._
