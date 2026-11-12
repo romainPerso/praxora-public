@@ -6,7 +6,7 @@
 > maintenance track record. Each choice lists what was ruled out — for instance Drizzle (still
 > pre-1.0) and MinIO (community edition abandoned).
 
-_État au 31 octobre 2026 ; choix validés le 16 octobre 2026 (décision D-009)._
+_État au 12 novembre 2026 ; choix validés le 16 octobre 2026 (décision D-009)._
 
 ## La règle
 
@@ -53,8 +53,8 @@ extension du client Prisma, doublée de la sécurité au niveau des lignes de Po
 
 ### Better Auth, avec un garde-fou
 
-Choisie mais **pas encore branchée** : elle arrive avec l'administration. C'est la référence
-actuelle pour l'authentification auto-hébergée en TypeScript, mais elle a moins
+Branchée en novembre 2026 avec l'administration (connexion, invitations, double authentification
+de mon compte). C'est la référence actuelle pour l'authentification auto-hébergée en TypeScript, mais elle a moins
 de deux ans de version stable : **le seul composant qui ne remplit pas pleinement la règle**.
 Garde-fou : elle n'est appelée qu'à travers notre propre module d'authentification, et ses tables
 sont dans notre base avec des empreintes de mot de passe standard. Si elle déclinait, on la
@@ -82,7 +82,6 @@ fourni dans le paquet d'export.
 
 ## En étude, bientôt
 
-- **Better Auth**, branchée avec l'administration (décembre 2026).
 - **Fournisseurs d'IA** pour les aides aux clients, derrière une couche d'abstraction : un pour le
   texte, un pour l'image, à choisir avant la version 1 selon le lieu de traitement des données et
   les garanties RGPD, l'absence d'entraînement sur nos données, la qualité et le prix.

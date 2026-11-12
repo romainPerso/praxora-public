@@ -15,9 +15,9 @@ English summary.
 - **What I do**: complete web applications, from interface design to production — TypeScript,
   React / Next.js, Node.js, PostgreSQL, Docker.
 - **What I am building now**: [praxoraXwebbuilder](projets/praxora-webbuilder/), a platform that
-  builds and manages showcase websites for freelancers and small businesses. The demos are live;
-  the client admin and the full site export (so that each client stays the owner of their site)
-  are in progress.
+  builds and manages showcase websites for freelancers and small businesses. The demos are live,
+  and so is a first [client admin](projets/praxora-webbuilder/administration.md); the full site
+  export (so that each client stays the owner of their site) is in progress.
 - **How I work**: written, reasoned decisions, a ticket for everything, automated tests, and an
   AI (Claude) used as an architect colleague within explicit rules — see
   [Working with AI](methode/travailler-avec-l-ia.md) (in French).
@@ -36,6 +36,7 @@ English summary.
 | ↳ [Code samples](projets/praxora-webbuilder/exemples/)                | commented excerpts                                                 |
 | ↳ [Demos](projets/praxora-webbuilder/demos.md)                        | the live websites                                                  |
 | ↳ [Shops](projets/praxora-webbuilder/commerces.md)                    | selling without online payment: pickup orders, filterable shop     |
+| ↳ [Admin](projets/praxora-webbuilder/administration.md)               | the client interface: requests, editor, publishing, accounts       |
 | [praxora-compta](projets/praxora-compta/)                             | bookkeeping and e-invoicing for French micro-entrepreneurs (study) |
 | [Working with AI](methode/travailler-avec-l-ia.md)                    | method, rules, limits                                              |
 | [Continuous integration and tests](methode/integration-continue.md)   | automated checks, tests, dependencies, deployment                  |
@@ -46,8 +47,9 @@ English summary.
 Every page describes **in the present tense only what exists**, and ends with what is being
 studied or coming soon (« En étude, bientôt »). Pages are updated once it is delivered.
 
-- **praxoraXwebbuilder**: authentication and the client admin (first client targeted for
-  December 2026), then the standalone export and AI helpers (version 1, January 2027).
+- **praxoraXwebbuilder**: the rest of the client admin and off-site backups (first client
+  targeted for December 2026), then the standalone export and AI helpers (version 1, January
+  2027).
 - **praxora-compta**: the study ends in late November 2026 with a go / no-go decision.
 - **This book**: a small website (GitHub Pages) for easier reading.
 

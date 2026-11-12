@@ -2,8 +2,9 @@
 
 > **In English** — A multi-site platform that builds and manages showcase websites for
 > freelancers and small businesses (yoga teachers, restaurants, tradespeople, shops). Sites are
-> assembled from a catalogue of typed blocks. Coming next: a restricted admin where clients edit
-> only their content, and the export of any site as a standalone application with its data. One
+> assembled from a catalogue of typed blocks. Clients edit only their content in a restricted
+> admin (in progress); coming next: the export of any site as a standalone application with its
+> data. One
 > Next.js codebase, PostgreSQL with row-level security, self-hosted on a European VPS. Built by one
 > person, with an AI used as an architect colleague under explicit rules.
 
@@ -31,8 +32,8 @@ Ce que la plateforme apportera à la version 1 (l'état actuel est détaillé pl
 ## En chiffres (12 novembre 2026)
 
 - **Une seule application** Next.js : aujourd'hui les sites publics, sur la plateforme ou en mode
-  autonome ; demain les administrations.
-- **Une trentaine de types de blocs** (héros, planning de cours, carte du restaurant, horaires,
+  autonome, et les administrations ([voir](administration.md)).
+- **Près de quarante types de blocs** (héros, planning de cours, carte du restaurant, horaires,
   réalisations avec avant / après, demande de devis, carte géographique…) et des **fiches**
   partagées (personnes, lieux, réalisations).
 - **Treize sites de démonstration** en ligne, pour cinq familles de métiers : [voir les démos](demos.md).
@@ -48,6 +49,7 @@ Ce que la plateforme apportera à la version 1 (l'état actuel est détaillé pl
 | [Exemples de code](exemples/)           | extraits commentés                         |
 | [Démos](demos.md)                       | les sites en ligne et ce que chacun montre |
 | [Commerces](commerces.md)               | vendre sans paiement en ligne              |
+| [Administration](administration.md)     | l'interface des clients et la mienne       |
 
 ## Calendrier
 
@@ -59,13 +61,15 @@ Ce que la plateforme apportera à la version 1 (l'état actuel est détaillé pl
 
 ## En étude, bientôt
 
-| Quoi                                                                  | Quand (visé)              |
-| --------------------------------------------------------------------- | ------------------------- |
-| Authentification, administration du client (contenus, photos, fiches) | premier client, déc. 2026 |
-| Publication et retour arrière depuis l'administration                 | premier client, déc. 2026 |
-| Paquet d'export (application, données, médias, guide)                 | version 1, janv. 2027     |
-| Aides IA (rédaction, traduction), mesurées et plafonnées par client   | version 1, janv. 2027     |
+| Quoi                                                                | Quand (visé)              |
+| ------------------------------------------------------------------- | ------------------------- |
+| Administration : actualités, traductions, historique et versions    | premier client, déc. 2026 |
+| Sauvegardes hors du serveur et restauration                         | premier client, déc. 2026 |
+| Paquet d'export (application, données, médias, guide)               | version 1, janv. 2027     |
+| Aides IA (rédaction, traduction), mesurées et plafonnées par client | version 1, janv. 2027     |
 
 Aujourd'hui en place : le catalogue de blocs et de fiches, les thèmes, les deux langues, le
-cloisonnement par la base, les médias, les formulaires (contact, réservation, demande de devis)
-et les sites publics (démos et www.praxora.fr).
+cloisonnement par la base, les médias, les formulaires (contact, réservation, demande de devis,
+commande à retirer), les sites publics (démos et www.praxora.fr) et une première administration :
+connexion sur invitation, demandes, éditeur de page et publication, contenus, photos, tâches
+courtes sur téléphone, création d'un client et de son site depuis une démo.
