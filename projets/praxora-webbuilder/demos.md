@@ -85,6 +85,10 @@ Jamais d'image générée pour un vrai client : ses réalisations sont ses photo
 Les numéros de téléphone des démos appartiennent tous aux tranches que l'Arcep réserve à la
 fiction, et un test le vérifie : un numéro inventé au hasard pourrait sonner chez un vrai abonné.
 
+Les démos servent aussi de point de départ aux sites des clients : un nouveau site part de la
+démo de son métier, et la publication reste bloquée tant qu'un fait inventé y figure (voir
+[l'administration](administration.md)).
+
 ## En étude, bientôt
 
 La série est complète pour le moment. Une nouvelle démo viendra quand un métier le demandera.

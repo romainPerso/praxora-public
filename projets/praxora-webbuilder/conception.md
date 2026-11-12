@@ -58,9 +58,9 @@ marqué **réglage** (pour moi) ou **contenu** (pour le client), ses variantes, 
 d'exemple, son numéro de version et ses migrations. De cette déclaration se déduisent :
 
 - la **validation** des configurations enregistrées ;
-- les **formulaires** de l'administration (**à venir**, avec l'administration) ;
-- les **droits** du client, champ par champ (la séparation réglage / contenu est en place, son
-  application dans l'administration est **à venir**) ;
+- les **formulaires** de l'administration : l'éditeur lit la déclaration et n'affiche que les
+  champs de contenu ([voir l'administration](administration.md)) ;
+- les **droits** du client, champ par champ : un réglage n'apparaît jamais dans ses formulaires ;
 - l'**enregistrement comme modèle** (les contenus du client sont remplacés par les exemples :
   rien ne fuit d'un client vers un modèle).
 
@@ -87,8 +87,8 @@ par défaut ne demande pas de nouvelle version. _(D-036)_
 Un brouillon par site ; **publier** recopie le brouillon en une version numérotée, **jamais
 modifiée ensuite** ; un retour arrière recopie une ancienne version en une nouvelle. L'historique
 reste complet et linéaire ; les modifications simultanées sont détectées par un numéro de
-révision. Le modèle de données et l'affichage de la version publiée sont en place ; les boutons
-« publier » et « revenir » arriveront avec l'administration. _(D-032)_
+révision. Le bouton « Publier » est en place dans l'administration, avec le récapitulatif des
+modifications ; la remise en ligne d'une ancienne version est **à venir**. _(D-032, D-093)_
 
 ## 8. Le cloisonnement garanti par la base
 
@@ -147,7 +147,7 @@ sections claires restent unies, comme le mur d'une galerie.
 
 ## En étude, bientôt
 
-- **Administration du client** : formulaires et droits déduits du catalogue, publication et retour
-  arrière (premier client, décembre 2026).
+- **Administration du client** : historique et remise en ligne d'une version, traductions,
+  actualités (premier client, décembre 2026).
 - **Paquet d'export** du mode autonome (version 1, janvier 2027).
 - **Aides IA** débranchables, coupées en mode autonome (version 1).

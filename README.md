@@ -15,8 +15,9 @@ exposer de sensible.
   en production — TypeScript, React / Next.js, Node.js, PostgreSQL, Docker.
 - **Ce que je construis en ce moment** : [praxoraXwebbuilder](projets/praxora-webbuilder/), une
   plateforme pour fabriquer et administrer des sites vitrines d'indépendants et de petits
-  commerces. Les démos sont en ligne ; l'administration des clients et l'export complet du site
-  (pour que le client reste propriétaire) sont en cours.
+  commerces. Les démos sont en ligne, une première
+  [administration des clients](projets/praxora-webbuilder/administration.md) aussi ; l'export
+  complet du site (pour que le client reste propriétaire) est en cours.
 - **Comment je travaille** : décisions écrites et justifiées, tickets pour tout, tests
   automatiques, et une IA (Claude) utilisée comme un collègue architecte, encadrée par des règles
   explicites — voir [Travailler avec l'IA](methode/travailler-avec-l-ia.md).
@@ -35,6 +36,7 @@ exposer de sensible.
 | ↳ [Exemples de code](projets/praxora-webbuilder/exemples/)           | technique           | extraits commentés                                                     |
 | ↳ [Démos](projets/praxora-webbuilder/demos.md)                       | tout le monde       | les sites en ligne                                                     |
 | ↳ [Commerces](projets/praxora-webbuilder/commerces.md)               | curieux, technique  | vendre sans paiement en ligne : commande à retirer, boutique filtrable |
+| ↳ [Administration](projets/praxora-webbuilder/administration.md)     | curieux, technique  | l'interface des clients : demandes, éditeur, publication, comptes      |
 | [praxora-compta](projets/praxora-compta/)                            | curieux             | comptabilité et facture électronique des auto-entrepreneurs (en étude) |
 | [Travailler avec l'IA](methode/travailler-avec-l-ia.md)              | technique, managers | méthode, règles, limites                                               |
 | [Intégration continue et tests](methode/integration-continue.md)     | technique           | vérifications automatiques, tests, dépendances, mise en production     |
@@ -45,8 +47,8 @@ exposer de sensible.
 Chaque page du book décrit **au présent ce qui existe**, et se termine par ce qui est en étude
 ou arrive bientôt. Elle est mise à jour quand c'est livré.
 
-- **praxoraXwebbuilder** : l'authentification et l'administration des clients (premier client
-  visé en décembre 2026), puis l'export autonome et les aides IA (version 1, janvier 2027).
+- **praxoraXwebbuilder** : la fin de l'administration des clients et les sauvegardes (premier
+  client visé en décembre 2026), puis l'export autonome et les aides IA (version 1, janvier 2027).
 - **praxora-compta** : l'étude se conclut fin novembre 2026 par la décision de développer ou non.
 - **Ce book** : un petit site (GitHub Pages) pour le lire plus confortablement.
 
